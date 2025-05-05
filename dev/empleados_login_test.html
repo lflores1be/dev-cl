@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingreso de Trabajadores - BancoEstado</title>
+  <!-- CAMBIAR CUANDO ENTRE EN PROD-->
+  <!--<link rel="icon" href="/etc.clientlibs/bancoestado-public/clientlibs/clientlib-site/resources/images/favicon.png" type="image/x-icon" />-->
+  <link rel="icon" href="./resources/favicon.png" type="image/x-icon" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f37021;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 40px;
+      margin-right: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 3rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 1.5rem;
+      background-color: #f37021;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d95f1b;
+    }
+
+    .footer-button {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .footer-button a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #e0e0e0;
+      color: #333;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .footer-button a:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- CAMBIAR CUANDO ENTRE EN PROD-->
+    <!-- <img src="/content/experience-fragments/bancoestado-public/cl/es/site/header/master/_jcr_content/root/header/Logo.coreimg.svg/1731699055785/logo-bancoestado.svg" alt="Logo BancoEstado"> -->
+    <img src="./resources/logo-bancoestado.svg" alt="Logo BancoEstado">
+    <h1>BancoEstado - Ingreso de Trabajadores</h1>
+  </header>
+
+  <div class="container">
+    <h2>Accede a tu cuenta</h2>
+    <form method="POST" action="/login">
+      <label for="user">Usuario</label>
+      <input type="text" id="user" name="user" placeholder="lbravo1" required />
+
+      <!-- Probar con Ch@ng3m3.-->
+      <label for="password">Clave</label>
+      <input type="password" id="password" name="password" placeholder="Ingresa tu clave" required />
+
+      <button type="submit">Ingresar</button>
+    </form>
+
+    <div class="footer-button">
+      <a href="http://10.220.4.12/">Volver a la página principal</a>
+    </div>
+  </div>
+</body>
+</html>
