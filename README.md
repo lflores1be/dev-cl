@@ -45,6 +45,10 @@ dev-cl/
 
   * Verifica si el puerto RDP está abierto y además intenta una conexión remota con credenciales.
 
+* **Estado de la migración a S3 (Python)**
+
+  * Lista los prefijos del bucket de pruebas `andino-docs` (`migracion`, `finanzas_y_legal`, `operaciones`, `politicas`, `otros`) y muestra número de objetos y tamaño. No requiere credenciales.
+
 ---
 
 # Requisitos y dependencias
